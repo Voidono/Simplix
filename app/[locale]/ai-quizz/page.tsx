@@ -15,7 +15,7 @@ type QuizItem = {
 
 const page = () => {
   const [topic, setTopic] = useState('');
-  const [difficulty, setDifficulty] = useState('easy');
+  const [difficulty, setDifficulty] = useState('Easy');
   const [quiz, setQuiz] = useState<QuizItem[]>([]);
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState<{ role: 'user' | 'ai' | 'quiz'; content: string }[]>([]);
@@ -30,7 +30,7 @@ const page = () => {
     const res = await fetch('/api/quizz', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ topic, difficulty, numQuestions: 3 }),
+      body: JSON.stringify({ topic, difficulty, numQuestions: 6 }),
     });
 
     const data = await res.json();
