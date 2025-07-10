@@ -15,7 +15,7 @@ type QuizItem = {
 
 const page = () => {
   const [topic, setTopic] = useState('');
-  const [difficulty, setDifficulty] = useState('Easy');
+  const [difficulty, setDifficulty] = useState('easy');
   const [quiz, setQuiz] = useState<QuizItem[]>([]);
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState<{ role: 'user' | 'ai' | 'quiz'; content: string }[]>([]);
@@ -30,7 +30,7 @@ const page = () => {
     const res = await fetch('/api/quizz', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ topic, difficulty, numQuestions: 6 }),
+      body: JSON.stringify({ topic, difficulty, numQuestions: 3 }),
     });
 
     const data = await res.json();
@@ -102,13 +102,13 @@ const page = () => {
         </div>
 
         {/* Quiz Cards */}
-        {quiz.length > 0 && (
+        {/* {quiz.length > 0 && (
           <div className="space-y-6">
             {quiz.map((q, idx) => (
               <QuizCard key={idx} question={q} />
             ))}
           </div>
-        )}
+        )} */}
 
         {/* Message History */}
         {messages.length > 0 && (

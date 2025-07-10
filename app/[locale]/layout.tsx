@@ -46,7 +46,7 @@ export default async function LocaleLayout({
           <SidebarProvider>
             <AppSidebar />
             <main className="flex-1 overflow-y-auto">
-              <SidebarTrigger className=" fixed top-1 size-10"/>
+              <SidebarTrigger className=" fixed top-1 size-10 z-20"/>
               {children}
             </main>
           </SidebarProvider>

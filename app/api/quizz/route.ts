@@ -10,28 +10,26 @@ export async function POST(req: NextRequest) {
 
     const { text } = await generateText({
       model: google('gemini-1.5-flash'),
-prompt: `
-You are a quiz generator AI.
+      prompt: `
+      You are a quiz generator AI.
+      Generate ${numQuestions} multiple-choice quiz questions about the topic: "${topic}".
+      The difficulty level is "${difficulty}".
+      - For "easy", focus on basic concepts and definitions.
+      - For "medium", include questions that require some understanding or application.
+      - For "hard", include advanced topics or questions that require deep knowledge.
+      Each question should have 4 options (A, B, C, D), one correct answer, and a short explanation.
 
-Generate ${numQuestions} multiple-choice quiz questions about the topic: "${topic}".
-The difficulty level is "${difficulty}".
-- For "easy", focus on basic concepts and definitions.
-- For "medium", include questions that require some understanding or application.
-- For "hard", include advanced topics or questions that require deep knowledge.
-
-Each question should have 4 options (A, B, C, D), one correct answer, and a short explanation.
-
-Format the response as JSON array like this:
-[
-  {
-    "question": "...",
-    "options": ["A", "B", C", "D"],
-    "answer": "B",
-    "explanation": "..."
-  },
-  ...
-]
-`,
+      Format the response as JSON array like this:
+      [
+        {
+          "question": "...",
+          "options": ["A", "B", "C", "D"],
+          "answer": "B",
+          "explanation": "..."
+        },
+        ...
+      ]
+      `,
       temperature: 0.7,
     });
 

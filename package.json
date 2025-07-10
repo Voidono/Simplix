@@ -14,11 +14,13 @@
     "@radix-ui/react-separator": "^1.1.7",
     "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/react-tooltip": "^1.2.7",
+    "@supabase/supabase-js": "^2.50.3",
     "ai": "^4.3.16",
     "axios": "^1.10.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.515.0",
+    "motion": "^12.20.1",
     "nanoid": "^5.1.5",
     "next": "15.3.3",
     "next-intl": "^4.1.0",
@@ -27,6 +29,8 @@
     "react-markdown": "^10.1.0",
     "react-ts-tradingview-widgets": "^1.2.8",
     "recharts": "^2.15.3",
+    "remark-gfm": "^4.0.1",
+    "simplex-noise": "^4.0.3",
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {

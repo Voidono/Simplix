@@ -203,3 +203,13 @@
 .animate-bounce-subtle {
   animation: bounceSubtle 1.5s infinite ease-in-out;
 }
+
+/* duolingo */
+@keyframes growHeight {
+  from { height: 0; }
+  to { height: 38px; }
+}
+
+.animate-grow {
+  animation: growHeight 0.5s ease-out forwards;
+}

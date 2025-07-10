@@ -44,3 +44,18 @@ GOOGLE_GENERATIVE_AI_API_KEY=
 # finhub api
 FINNHUB_API_KEY=
 ```
+
+
+### Setting Up your own BOTS:
+```bash
+app/[locale]/dashboard/page.tsx
+app/[locale]/dashboard/test-embed/page.tsx
+app/api/bot/route.ts
+app/api/bot/[botId]/route.ts
+app/api/chat/[botId]/route.ts
+app/api/setup/route.ts
+ChatWidget.tsx
+@/lib/db.ts
+@/lib/supabase.ts
+@/public/embed.js
+```

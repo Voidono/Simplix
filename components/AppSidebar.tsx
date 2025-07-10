@@ -124,9 +124,9 @@ const AppSidebar = () => {
 
         <SidebarGroup>
           <SidebarGroupLabel className="text-sm font-semibold text-gray-600 uppercase tracking-wider flex items-center gap-2 mb-2">
-            <Lightbulb className="w-4 h-4 text-gray-500" /> Care Tools
+            <Lightbulb className="w-4 h-4 text-gray-500" /> If everyone is a superhero, then no one is.
           </SidebarGroupLabel>
-          <SidebarGroupContent>
+          {/* <SidebarGroupContent>
             <SidebarMenu>
               {tools.map((tool) => (
                 <SidebarMenuItem
@@ -144,11 +144,11 @@ const AppSidebar = () => {
                 </SidebarMenuItem>
               ))}
             </SidebarMenu>
-          </SidebarGroupContent>
+          </SidebarGroupContent> */}
         </SidebarGroup>
       </SidebarContent>
       <SidebarFooter className="p-4 text-center text-xs text-gray-400 border-t border-blue-100 bg-white">
-        © 2025 EGBO & Apolumis. All rights reserved.
+        © 2025 Apolumis. All rights reserved.
       </SidebarFooter>
     </Sidebar>
   )

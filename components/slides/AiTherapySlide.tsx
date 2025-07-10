@@ -34,9 +34,9 @@ const AiTherapySlide = () => {
 
         {/* Right Side: Highlight Box */}
         <div className="p-6 border-2 border-blue-700 bg-blue-50 rounded-xl shadow-md">
-          <h2 className="text-xl font-bold text-blue-800 mb-2">Our Latest Research/Solution on Safety</h2>
-          <p className="text-blue-600">AI now can identify, categorize people to suitable real therapists, flag level of health</p>
-          <p className="text-blue-800 font-bold mt-4">Collab with Google</p>
+          <h2 className="text-xl font-bold text-blue-800 mb-2">Safe AI Chatbot</h2>
+          <p className="text-blue-600">AI now can identify, categorize people to suitable real therapists, flag level of health and risk</p>
+          <p className="text-blue-800 font-bold mt-4">Using Gemini blocks</p>
         </div>
       </section>
 
