@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { Send, DollarSign, Bot } from 'lucide-react';
+import { Send, Bot } from 'lucide-react';
 import { StockCard } from '@/components/StockCard';
 import ReactMarkdown from 'react-markdown';
 

@@ -1,8 +1,4 @@
-import {
-  ArrowLeft,
-  HeartHandshake,
-  Share2
-} from "lucide-react";
+import { HeartHandshake } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import React from "react";
 import Link from "next/link";
@@ -14,7 +10,7 @@ const AiTherapySlide = () => {
         Hi, how are you feeling right now?
       </h1>
       <h1 className="text-xl font-extrabold text-blue-700 text-center leading-tight tracking-wider animate-fade-in-down">
-        I'm an AI therapist, ready to chat when you are sad, happy, etc
+        I&apos;m an AI therapist, ready to chat when you are sad, happy, etc
       </h1>
 
       <section className="w-full grid md:grid-cols-2 gap-8 items-center max-w-5xl">
@@ -39,9 +35,8 @@ const AiTherapySlide = () => {
           <p className="text-blue-800 font-bold mt-4">Using Gemini blocks</p>
         </div>
       </section>
-
     </div>
   );
 }
 
-export default AiTherapySlide
+export default AiTherapySlide;
